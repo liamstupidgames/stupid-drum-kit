@@ -40,9 +40,12 @@ function keyPressed(key) {
     for (let element = 0; element < itensInsideDiv;  element++ ) {
         
         let currentElement = document.getElementsByClassName("drum-part")[element];
-   
-        if (currentElement.innerHTML.toLocaleLowerCase() === key) {
-            executeSound(currentElement.getAttribute("id"));
+        
+        let keyHTML = currentElement.innerHTML.toLocaleLowerCase(); 
+
+        if ( keyHTML === key) {
+            let sound = currentElement.getAttribute("id");
+            executeSound(sound);
         }
     }
 }
