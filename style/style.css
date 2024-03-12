@@ -1,0 +1,41 @@
+body {
+    background-color: #272A43;
+}
+
+.main-div {
+    display: flex;
+    flex-direction: column;
+    height: 98vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 6rem;
+}
+.s {
+    font-size: 3rem;
+}
+
+.drum-part {
+    height: 200px;
+    width: 200px;
+    font-size: 5rem;
+    color:#272A43;
+}
+
+.sounds {
+    padding: 30px;
+    height: 150px;
+    width: 95%;
+    background-color: #151725;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+}

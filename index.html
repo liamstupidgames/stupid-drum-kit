@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/web/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./src/script.js" defer></script>
+    <title>stupid drum kit</title>
+</head>
+<body>
+    <div class="main-div">
+        <div class="title">
+            <h1 class="text">Stupid Drum 🥁 Kit</h1>
+        </div>
+        <div class="drum-images-div">
+            <button class="drum-part" id="tom-1" onclick="mouseExecution('tom-1')">W</button>
+            <button class="drum-part" id="tom-2" onclick="mouseExecution('tom-2')">A</button>
+            <button class="drum-part" id="tom-3" onclick="mouseExecution('tom-3')">S</button>
+            <button class="drum-part" id="tom-4" onclick="mouseExecution('tom-4')">D</button>
+            <button class="drum-part" id="snare" onclick="mouseExecution('snare')">J</button>
+            <button class="drum-part" id="crash" onclick="mouseExecution('crash')">K</button>
+            <button class="drum-part" id="kick-bass" onclick="mouseExecution('kick-bass')">L</button>
+        </div>
+        <h2 class="text s">Played: </h2>
+        <div class="sounds" id="img-spawner">
+        </div>
+
+    </div>
+</body>
+</html>
