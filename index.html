@@ -13,19 +13,18 @@
         <div class="title">
             <h1 class="text">Stupid Drum 🥁 Kit</h1>
         </div>
-        <div class="drum-images-div">
-            <button class="drum-part" id="tom-1" onclick="mouseExecution('tom-1')">W</button>
-            <button class="drum-part" id="tom-2" onclick="mouseExecution('tom-2')">A</button>
-            <button class="drum-part" id="tom-3" onclick="mouseExecution('tom-3')">S</button>
-            <button class="drum-part" id="tom-4" onclick="mouseExecution('tom-4')">D</button>
-            <button class="drum-part" id="snare" onclick="mouseExecution('snare')">J</button>
-            <button class="drum-part" id="crash" onclick="mouseExecution('crash')">K</button>
-            <button class="drum-part" id="kick-bass" onclick="mouseExecution('kick-bass')">L</button>
+        <div class="drum-images-div" id="drum-images-div">
+            <button class="drum-part" id="tom-1" onclick="executeSound('tom-1')">W</button>
+            <button class="drum-part" id="tom-2" onclick="executeSound('tom-2')">A</button>
+            <button class="drum-part" id="tom-3" onclick="executeSound('tom-3')">S</button>
+            <button class="drum-part" id="tom-4" onclick="executeSound('tom-4')">D</button>
+            <button class="drum-part" id="snare" onclick="executeSound('snare')">J</button>
+            <button class="drum-part" id="crash" onclick="executeSound('crash')">K</button>
+            <button class="drum-part" id="kick-bass" onclick="executeSound('kick-bass')">L</button>
         </div>
         <h2 class="text s">Played: </h2>
         <div class="sounds" id="img-spawner">
         </div>
-
     </div>
 </body>
 </html>

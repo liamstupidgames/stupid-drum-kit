@@ -19,24 +19,34 @@ function showPlayed(sound) {
         clearImgs();
         spawnImg(sound);
     }
-
 }
 
 function playedCount() {
     return parseInt(document.getElementById("img-spawner").childElementCount);
 }
 
-
-function mouseExecution(sound) {
+function executeSound(sound) {
     var audio = new Audio(`../assets/sounds/${sound}.mp3`);
     audio.play();
     showPlayed(sound);
 }
 
-function keyboardExecution() {
+function keyPressed(key) {
 
+    const itensInsideDiv = parseInt(
+        document.getElementById("drum-images-div").childElementCount
+        );
+    
+    for (let element = 0; element < itensInsideDiv;  element++ ) {
+        
+        let currentElement = document.getElementsByClassName("drum-part")[element];
+   
+        if (currentElement.innerHTML.toLocaleLowerCase() === key) {
+            executeSound(currentElement.getAttribute("id"));
+        }
+    }
 }
 
-function keyPressed() {
-
-}
+window.addEventListener('keydown', function (e) {
+    keyPressed(e.key);
+});
