@@ -19,11 +19,21 @@ body {
     font-size: 3rem;
 }
 
-.drum-part {
+button {
     height: 200px;
     width: 200px;
     font-size: 5rem;
     color:#272A43;
+    border: none;
+}
+
+.press-simulation {
+    height: 200px;
+    width: 200px;
+    font-size: 5rem;
+    background-color:#272A43;
+    color: white;
+    border: none;
 }
 
 .sounds {
@@ -32,11 +42,21 @@ body {
     width: 95%;
     background-color: #151725;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 20px;
 }
 
 img {
     width: 150px;
     height: 150px;
     background-color: white;
+}
+
+.key-img {
+    width: 200px;
+    height: 200px;
+}
+
+.hidden {
+    visibility: hidden;
 }
