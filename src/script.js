@@ -1,6 +1,6 @@
 function spawnImg(sound) {
     let img = document.createElement('img');
-    img.src = `../assets/images/${sound}.png`;
+    img.src = `https://raw.githubusercontent.com/liamstupidgames/stupid-drum-kit/master/assets/images/${sound}.png`;
     document.getElementById("img-spawner").appendChild(img);
 }
 
@@ -26,7 +26,7 @@ function playedCount() {
 }
 
 function executeSound(sound) {
-    var audio = new Audio(`../assets/sounds/${sound}.mp3`);
+    var audio = new Audio(`https://raw.githubusercontent.com/liamstupidgames/stupid-drum-kit/master/assets/sounds/${sound}.mp3`);
     audio.play();
     showPlayed(sound);
 }
