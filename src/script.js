@@ -26,6 +26,8 @@ function playedCount() {
 }
 
 function executeSound(sound) {
+  resetKeySimulation();
+
   var audio = new Audio(
     `https://raw.githubusercontent.com/liamstupidgames/stupid-drum-kit/master/assets/sounds/${sound}.mp3`
   );
@@ -37,13 +39,20 @@ function executeSound(sound) {
 }
 
 function pressKeySimulation(id) {
-  alert(document.getElementById(id).classList);
   document.getElementById(id).classList.add("press-simulation");
-  alert(document.getElementById(id).classList);
 }
 
-function resetKeySimulation(id) {
-  document.getElementById(id).classList.remove("press-simulation");
+function resetKeySimulation() {
+  for (
+    let element = 0;
+    element < document.getElementsByClassName("drum-part").length;
+    element++
+  ) {
+    let id = document
+      .getElementsByClassName("drum-part")
+      [element].getAttribute("id");
+    document.getElementById(id).classList.remove("press-simulation");
+  }
 }
 
 function keyPressed(key) {
