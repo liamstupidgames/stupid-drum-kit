@@ -28,9 +28,9 @@ button {
 }
 
 .press-simulation {
-    height: 200px;
-    width: 200px;
-    font-size: 9rem;
+    height: 300px;
+    width: 300px;
+    font-size: 10rem;
     background-color:#272A43;
     color: white;
     border: none;
